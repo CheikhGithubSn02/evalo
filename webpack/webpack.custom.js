@@ -18,7 +18,6 @@ module.exports = async (config, options, targetOptions) => {
     encoding: 'hex',
     files: { include: ['*.json'] },
   });
-
   // PLUGINS
   if (config.mode === 'development') {
     config.plugins.push(
@@ -138,3 +137,5 @@ module.exports = async (config, options, targetOptions) => {
 
   return config;
 };
+
+//config for using boosted

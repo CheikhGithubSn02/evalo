@@ -91,6 +91,7 @@ public class SecurityConfiguration {
             .antMatchers("/management/info").permitAll()
             .antMatchers("/management/prometheus").permitAll()
             .antMatchers("/management/**").hasAuthority(AuthoritiesConstants.ADMIN)
+            //.antMatchers("/department").hasAuthority(AuthoritiesConstants.APP_MANAGER)
         .and()
             .oauth2Login()
         .and()

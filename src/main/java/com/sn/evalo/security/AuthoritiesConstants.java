@@ -11,5 +11,7 @@ public final class AuthoritiesConstants {
 
     public static final String ANONYMOUS = "ROLE_ANONYMOUS";
 
+    public static final String APP_MANAGER = "evalo_manager";
+
     private AuthoritiesConstants() {}
 }

@@ -158,11 +158,14 @@ spring:
       client:
         provider:
           oidc:
-            issuer-uri: http://localhost:9080/realms/jhipster
+            #issuer-uri: http://localhost:9080/realms/jhipster
+            issuer-uri: https://keycloak-pprod.orange-sonatel.com/auth/realms/Evalo
         registration:
           oidc:
-            client-id: web_app
-            client-secret: web_app
+            client-id: evalo-client
+            client-secret: 1593e6c5-3e55-4960-bfc8-be557947d27f
+            #client-id: web_app
+            #client-secret: web_app
             scope: openid, profile, email, offline_access # last one for refresh tokens
 
 server:
