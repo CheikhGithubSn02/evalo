@@ -3,7 +3,18 @@
   "version": "0.0.1-SNAPSHOT",
   "private": true,
   "description": "Description for evalo",
+  "keywords": [],
+  "homepage": "https://github.com/CheikhGithubSn02/evalo#readme",
+  "bugs": {
+    "url": "https://github.com/CheikhGithubSn02/evalo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CheikhGithubSn02/evalo.git"
+  },
   "license": "UNLICENSED",
+  "author": "",
+  "main": ".lintstagedrc.js",
   "scripts": {
     "app:start": "./mvnw",
     "backend:build-cache": "./mvnw dependency:go-offline",
@@ -90,7 +101,7 @@
     "@ng-bootstrap/ng-bootstrap": "13.0.0",
     "@ngx-translate/core": "14.0.0",
     "@ngx-translate/http-loader": "7.0.0",
-    "@popperjs/core": "2.11.6",
+    "@popperjs/core": "^2.11.6",
     "boosted": "^5.2.2",
     "bootstrap": "5.2.0",
     "dayjs": "1.11.5",
@@ -137,7 +148,7 @@
     "prettier-plugin-java": "1.6.2",
     "prettier-plugin-packagejson": "2.2.18",
     "rimraf": "3.0.2",
-    "sass": "^1.55.0",
+    "sass": "^1.56.1",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
     "swagger-ui-dist": "4.14.0",
@@ -145,6 +156,7 @@
     "typescript": "4.8.2",
     "wait-on": "6.0.1",
     "webpack-bundle-analyzer": "4.6.1",
+    "webpack-cli": "^5.0.1",
     "webpack-merge": "5.8.0",
     "webpack-notifier": "1.15.0"
   },

@@ -98,9 +98,11 @@ export class JobComponent implements OnInit {
 
   protected fillComponentAttributesFromResponseHeader(headers: HttpHeaders): void {
     this.totalItems = Number(headers.get(TOTAL_COUNT_RESPONSE_HEADER));
+    console.log('taillsssse: ' + this.totalItems);
   }
 
   protected queryBackend(page?: number, predicate?: string, ascending?: boolean): Observable<EntityArrayResponseType> {
+    console.log('itemsPerPage: ' + this.itemsPerPage);
     this.isLoading = true;
     const pageToLoad: number = page ?? 1;
     const queryObject = {
@@ -113,6 +115,7 @@ export class JobComponent implements OnInit {
   }
 
   protected handleNavigation(page = this.page, predicate?: string, ascending?: boolean): void {
+    console.log('itemsPerPage 2: ' + this.itemsPerPage);
     const queryParamsObj = {
       page,
       size: this.itemsPerPage,
